@@ -1,0 +1,58 @@
+https://github.com/Sambodhi-Git/Git-Demo.git
+
+
+Go to any folder where you want to store the files
+Once you enter there right click and open git bash
+
+Set Up Git:
+git config --global user.name "Sambodhi-Git"
+git config --global user.email "sambodhi.94@gmail.com"
+
+check
+	git config
+	
+Adding files: - 
+	git touch file.txt
+		See that files are created
+
+Make the folder a repository
+	git status
+	git init
+		Go to view And see the hidden files,
+		Once you see git confirmed that git is craeted
+		
+UntrAcked files are present
+	Tarck files stores change history
+	
+How to convert untracked(RED) to tracked(GREEN)
+	git add file.txt
+
+For all files 
+	git add.
+	git status 
+		green coloured
+To keep it in our repository on your git we need to commit
+	git commit -m "Any fucking message"
+	git status
+		On branch master
+		default branch name is master
+Lets make some changes in the files
+	Write something in the files
+		save the files
+			changes have been made
+	git status
+		again red colour
+			Modified
+	git add.
+	git satus
+		Files are been tracked now
+	git commit -m "After changes"
+
+Now we have to add these files to our repository 
+	git add remote add origin URL
+	git remote
+		origin
+			we have given a  name origin to the entire URL
+
+Push my files
+	git push -u origin master
